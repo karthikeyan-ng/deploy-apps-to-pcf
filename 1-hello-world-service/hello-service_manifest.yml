@@ -1,0 +1,8 @@
+applications:
+- name: hello-service
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  routes:
+  - route: hello-service.cfapps.io
+  stack: cflinuxfs3
