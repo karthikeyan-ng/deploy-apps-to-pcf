@@ -50,3 +50,18 @@ user:           <Your login email id>
 org:            techstack
 space:          testing
 ```
+
+## How to push apps to your org / space?
+`cf push <app-name>`	==> if the `<app-name>` already exists globally on your PCF domain, it would throw an error. Hence use a unique `<app-name>` when you push.
+
+OR
+
+`cf push <app-name> --random-route` ==> In this way PCF would assign a random route for your app.  
+
+If you do not specify any `<build-pack>`, it would throw an error. Because, PCF couldn’t find a right build pack for your app.  
+
+`cf push <app-name> -p target/hello-world-rest-api.jar` ==> Here `-p` —> Path to app directory or to a zip file of the contents of the app directory.  
+
+`cf push` ==> it would look for `manifest.yml` file at the root of your application folder structure.  
+
+
