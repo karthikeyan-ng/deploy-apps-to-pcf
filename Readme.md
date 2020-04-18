@@ -88,3 +88,16 @@ If you would like to add a new Route for an existing application, use below synt
 Route is nothing but a new host URL  
 `cf map-route APP_NAME  DOMAIN --hostname <your-new-unique-host-name>`  
  
+* **How to List all the `spaces` for the current logged in `org`?**  
+`cf spaces`  
+```http request
+name
+development
+```
+
+* **How to List available `orgs` information? **  
+`cf orgs`  
+```http request
+name
+techstack
+```
