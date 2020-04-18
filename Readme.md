@@ -64,4 +64,7 @@ If you do not specify any `<build-pack>`, it would throw an error. Because, PCF 
 
 `cf push` ==> it would look for `manifest.yml` file at the root of your application folder structure.  
 
+## How to view application logs?
+`cf logs APP_NAME` ==> it would show all the logs in your cf console.
+
 
