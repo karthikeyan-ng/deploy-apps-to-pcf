@@ -101,3 +101,12 @@ development
 name
 techstack
 ```
+
+* **How to `start` and `stop` and `restart` the application?**  
+`cf start APP_NAME` ==> To start  
+`cf stop APP_NAME`  ==> To stop  
+`cf restart APP_NAME` ==> To restart (stop and start)  
+
+
+
+ 
