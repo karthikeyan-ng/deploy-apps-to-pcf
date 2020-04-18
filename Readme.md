@@ -67,4 +67,11 @@ If you do not specify any `<build-pack>`, it would throw an error. Because, PCF 
 ## How to view application logs?
 `cf logs APP_NAME` ==> it would show all the logs in your cf console.
 
+## How to view application info?
+`cf apps` ==> it would display apps which is belongs to selected org and space as shown below.
+
+```http request
+name            requested state   instances   memory   disk   urls
+hello-service   stopped           0/1         1G       1G     hello-service.cfapps.io
+```
 
