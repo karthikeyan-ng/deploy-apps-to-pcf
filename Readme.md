@@ -107,6 +107,11 @@ techstack
 `cf stop APP_NAME`  ==> To stop  
 `cf restart APP_NAME` ==> To restart (stop and start)  
 
+* **How to create a manifest file from the deployed application?**  
+`cf create-app-manifest APP_NAME`  
+The above command would look at the `app` which is deployed on the PCF and based on the app configuration, 
+it would generate the `manifest.yml` file at your current path.  
 
+  
 
  
