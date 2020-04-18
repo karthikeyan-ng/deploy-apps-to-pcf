@@ -75,3 +75,12 @@ name            requested state   instances   memory   disk   urls
 hello-service   stopped           0/1         1G       1G     hello-service.cfapps.io
 ```
 
+## How to see the configured routes for your applications?
+`cf routes` ==> It would display the routes for the apps belongs to the selected `org` and `space`.
+You can point multiple routes to a single application.
+
+```http request
+space         host            domain      port   path   type   apps            service
+development   hello-service   cfapps.io                        hello-service
+```
+
