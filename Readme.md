@@ -116,6 +116,9 @@ it would generate the `manifest.yml` file at your current path.
 This command is in EXPERIMENTAL stage and may change without notice  
 `cf v3-droplets APP_NAME`
 
-   
+* **List all the services which are attached to your application**  
+`cf services`
+
+     
 
  
