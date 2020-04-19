@@ -192,4 +192,9 @@ test: 10
 
 After this step, you will see your `env` variable under `User-Provider` category is removed.
 
+* **How to scale your application instance on PCF?**  
+The below command scale your given application to two instances.  
+`cf scale APP_NAME -i 2`  
+`cf scale hello-service -i 2`
+
 
