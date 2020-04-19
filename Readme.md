@@ -181,3 +181,15 @@ After this step, you will see your `env` variable under `User-Provider` category
 User-Provided:
 test: 10
 ```
+
+* **How to unset / remove a environment variable for the specific application?**  
+`cf unset-env APP_NAME ENV_VAR_NAME`  
+`cf unset-env hello-service test`  
+
+>Removing env variable test from app hello-service in org techstack / space development as ...  
+ OK  
+ TIP: Use `cf restage` to ensure your env variable changes take effect  
+
+After this step, you will see your `env` variable under `User-Provider` category is removed.
+
+
