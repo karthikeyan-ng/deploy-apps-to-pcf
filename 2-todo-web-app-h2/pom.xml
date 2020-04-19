@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.techstack</groupId>
-	<artifactId>2-todo-web-app-h2</artifactId>
+	<artifactId>todo-web-app-h2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>2-todo-web-app-h2</name>
