@@ -233,5 +233,8 @@ Make a user-provided service instance available to CF apps
 * **How to remove the network policy?**  
 `cf remove-network-policy SOURCE_APP --destination-app DEST_APP --protocol tcp --port 8080`  
 
+* **How to deploy Docker container to PCF?**  
+`cf push APP_NAME --docker-image DOCKER_IMAGE_PATH --random-route`  
+
    
 
