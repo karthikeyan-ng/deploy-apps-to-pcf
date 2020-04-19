@@ -212,4 +212,8 @@ Make a user-provided service instance available to CF apps
 `cf create-user-provided-service SERVICE_INSTANCE`
 >In short you can call this as `cups`  
 
+* **How to bind / unbind a user provided service?**  
+    * To Bind: `cf bind-route-service DOMAIN_NAME --hostname HOST_NAME ROUTE_SERVICE`  
+    * To Unbind: `cf unbind-route-service DOMAIN_NAME --hostname HOST_NAME ROUTE_SERVICE`  
+    
 
