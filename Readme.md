@@ -236,5 +236,17 @@ Make a user-provided service instance available to CF apps
 * **How to deploy Docker container to PCF?**  
 `cf push APP_NAME --docker-image DOCKER_IMAGE_PATH --random-route`  
 
-   
+* **Blue Green Deployment**  
+Assumptions:
+    * Existing running app on PROD (BLUE APP)
+    * Done a code change in the current version of the app (GREEN_APP)
+        * Create a temp route
+        * Push the code
+        * Now both BLUE and GREEN are running on different routes
+    * Once you verify GREEN app is running without any issues
+    * `map-route` to the PROD route to pointing to your GREEN app.
+        * `cf map-route APP_NAME DOMAIN --hostname HOST_NAME`        
+        * `cf unmap-route APP_NAME DOMAIN --hostname HOST_NAME`
+        * `cf stop YOUR_PREVIOUS_BLUE_APP`
+        
 
