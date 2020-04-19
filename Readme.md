@@ -168,3 +168,16 @@ No running env variables have been set
 No staging env variables have been set
 ``` 
 
+* **How to set a environment variable for the specific application?**  
+`cf set-env APP_NAME ENV_VAR_NAME ENV_VAR_VALUE`  
+
+>Setting env variable 'test' for app hello-service in org techstack / space development as ...
+`OK`
+**TIP:** Use `cf restage hello-service` to ensure your env variable changes take effect
+
+After this step, you will see your `env` variable under `User-Provider` category.
+
+```json
+User-Provided:
+test: 10
+```
