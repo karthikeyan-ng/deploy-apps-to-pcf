@@ -10,6 +10,8 @@ Runs on default port of Spring Boot - 8080
 
 We will deploy to Cloud as a WAR
 
+For Local deployment `mvn clean spring-boot:run`
+
 ## Web Application
 
 - User can access the application by accessing `http://localhost:8080` or `http://localhost:8080/login`.
