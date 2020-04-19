@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.techstack</groupId>
-	<artifactId>1-hello-world-service</artifactId>
+	<artifactId>hello-world-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>1-hello-world-service</name>
 	<description>Simple Hello World Service to Deploy on PCF</description>

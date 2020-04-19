@@ -29,7 +29,7 @@ For Local deployment `mvn clean spring-boot:run`
 
 ## manifest.mf
 
-```
+```yaml
 applications:
 - name: todo-web-app-h2
   disk_quota: 1G
