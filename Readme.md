@@ -126,4 +126,45 @@ This command is in EXPERIMENTAL stage and may change without notice
 `cf create-service SERVICE PLAN SERVICE_INSTANCE`  
 `cf create-service db-service silver mydb`  
 
- 
+* **How to show all `env` variables for an APP?**  
+`cf env APP_NAME`
+`cf env hello-service`
+
+```json
+System-Provided:
+{
+ "VCAP_APPLICATION": {
+  "application_id": "f03f0b8f-92f9-44cd-bfef-27f9cb14da59",
+  "application_name": "hello-service",
+  "application_uris": [
+   "hello-service.cfapps.io"
+  ],
+  "application_version": "708d4d2e-dad3-4c94-a9c2-b2d1a72a605a",
+  "cf_api": "https://api.run.pivotal.io",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "hello-service",
+  "organization_id": "3a0d67e0-3bd1-45a2-aa55-d9c93d9060d3",
+  "organization_name": "techstack",
+  "process_id": "f03f0b8f-92f9-44cd-bfef-27f9cb14da59",
+  "process_type": "web",
+  "space_id": "2269acd4-48c0-4174-9642-3652296a7af2",
+  "space_name": "development",
+  "uris": [
+   "hello-service.cfapps.io"
+  ],
+  "users": null,
+  "version": "708d4d2e-dad3-4c94-a9c2-b2d1a72a605a"
+ }
+}
+
+No user-defined env variables have been set
+
+No running env variables have been set
+
+No staging env variables have been set
+``` 
+
