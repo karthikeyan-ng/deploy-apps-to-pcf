@@ -207,3 +207,9 @@ The below command scale your given application to two instances.
     * List Auto Scaling Apps: `cf autoscaling-apps`  
     * See all the Auto Scaling events for a the specific App: `cf autoscaling-events APP_NAME`  
 
+* **How to create a user provided service?**  
+Make a user-provided service instance available to CF apps  
+`cf create-user-provided-service SERVICE_INSTANCE`
+>In short you can call this as `cups`  
+
+
