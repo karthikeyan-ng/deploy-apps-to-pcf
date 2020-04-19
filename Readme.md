@@ -122,4 +122,8 @@ This command is in EXPERIMENTAL stage and may change without notice
 * **How to bind a service instance to your APP?**  
 `cf bind-service APP_NAME SERVICE_NAME`     
 
+* **How to create a service using CLI?**  
+`cf create-service SERVICE PLAN SERVICE_INSTANCE`  
+`cf create-service db-service silver mydb`  
+
  
