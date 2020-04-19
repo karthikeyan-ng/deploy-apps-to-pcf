@@ -119,6 +119,7 @@ This command is in EXPERIMENTAL stage and may change without notice
 * **List all the services which are attached to your application**  
 `cf services`
 
-     
+* **How to bind a service instance to your APP?**  
+`cf bind-service APP_NAME SERVICE_NAME`     
 
  
