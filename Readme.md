@@ -216,7 +216,22 @@ Make a user-provided service instance available to CF apps
     * To Bind: `cf bind-route-service DOMAIN_NAME --hostname HOST_NAME ROUTE_SERVICE`  
     * To Unbind: `cf unbind-route-service DOMAIN_NAME --hostname HOST_NAME ROUTE_SERVICE`  
     
-* How to do a health check for an application?
+* **How to do a health check for an application?**  
 `cf set-health-check APP_NAME http --endpoint /manage/health`  
 
+* **Setting up Direct communication between Microservices container?**    
+`cf set-env APP_NAME spring.cloud.services.registrationMethod [route |  direct]` => use `direct`
+
+>If you try to apply APP-to-APP comunication as Direct, also think about the
+>following steps.
+
+`cf network-policies` => This would display configured network policies.  
+
+* **How to add network policy?**  
+`cf add-network-policy SOURCE_APP --destination-app DEST_APP`  
+
+* **How to remove the network policy?**  
+`cf remove-network-policy SOURCE_APP --destination-app DEST_APP --protocol tcp --port 8080`  
+
+   
 
