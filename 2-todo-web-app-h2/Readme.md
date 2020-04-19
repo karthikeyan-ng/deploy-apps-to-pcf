@@ -33,7 +33,7 @@ applications:
   disk_quota: 1G
   instances: 1
   memory: 1G
-  path: target/todo-web-app-h2.war
+  path: target/todo-web-app-h2-0.0.1-SNAPSHOT.war
   timeout: 120
   routes:
   - route: todo-web-app-h2.cfapps.io
