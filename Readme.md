@@ -112,6 +112,10 @@ techstack
 The above command would look at the `app` which is deployed on the PCF and based on the app configuration, 
 it would generate the `manifest.yml` file at your current path.  
 
-  
+* **List Droplets of an app**   
+This command is in EXPERIMENTAL stage and may change without notice  
+`cf v3-droplets APP_NAME`
+
+   
 
  
