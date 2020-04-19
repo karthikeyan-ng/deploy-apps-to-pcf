@@ -216,4 +216,7 @@ Make a user-provided service instance available to CF apps
     * To Bind: `cf bind-route-service DOMAIN_NAME --hostname HOST_NAME ROUTE_SERVICE`  
     * To Unbind: `cf unbind-route-service DOMAIN_NAME --hostname HOST_NAME ROUTE_SERVICE`  
     
+* How to do a health check for an application?
+`cf set-health-check APP_NAME http --endpoint /manage/health`  
+
 
