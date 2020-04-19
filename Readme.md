@@ -201,4 +201,9 @@ The below command scale your given application to two instances.
 `cf install-plugin LOCAL-PATH/TO/PLUGIN`
 >For more information refer: https://docs.cloudfoundry.org/cf-cli/use-cli-plugins.html
 
+* **How to work with Auto Scaling?**  
+    * Enable: `cf enable-autoscaling APP_NAME`  
+    * Disable: `cf disable-autoscaling APP_NAME`  
+    * List Auto Scaling Apps: `cf autoscaling-apps`  
+    * See all the Auto Scaling events for a the specific App: `cf autoscaling-events APP_NAME`  
 
