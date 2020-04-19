@@ -250,3 +250,8 @@ Assumptions:
         * `cf stop YOUR_PREVIOUS_BLUE_APP`
         
 
+### Reference:
+https://docs.cloudfoundry.org/cf-cli/  
+https://login.run.pivotal.io/login  
+https://console.run.pivotal.io/  
+
