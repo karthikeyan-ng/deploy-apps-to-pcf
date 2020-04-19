@@ -197,4 +197,8 @@ The below command scale your given application to two instances.
 `cf scale APP_NAME -i 2`  
 `cf scale hello-service -i 2`
 
+* **How to install a plugin?**  
+`cf install-plugin LOCAL-PATH/TO/PLUGIN`
+>For more information refer: https://docs.cloudfoundry.org/cf-cli/use-cli-plugins.html
+
 
