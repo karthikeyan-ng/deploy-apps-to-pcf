@@ -1,0 +1,16 @@
+applications:
+  - name: todo-web-app-mysql
+    disk_quota: 1G
+    instances: 1
+    memory: 1G
+    path: target/todo-web-app-mysql-0.0.1-SNAPSHOT.war
+    timeout: 120
+    routes:
+      - route: todo-web-app-mysql.cfapps.io
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
+    stack: cflinuxfs3
+    env:
+      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+    service:
+      - todo-database
