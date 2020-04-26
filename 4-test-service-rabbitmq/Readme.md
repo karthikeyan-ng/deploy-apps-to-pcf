@@ -38,8 +38,8 @@ spring.rabbitmq.addresses=amqp://guest:guest@localhost:5672
 
 #### Produce Message
 You have an option to **produce** message using below Templates.  
-    - RabbitTemplate
-    - AmqpTemplate
+- `RabbitTemplate`
+- `AmqpTemplate`
     
 #### Consume Message
 In order to consume message annotate any Spring bean method using `@RabbitListener`    
@@ -82,3 +82,6 @@ applications:
     service:
       - rabbitmq-service
  ```
+
+## References:   
+Refer this repository for more detailed notes: https://github.com/karthikeyan-ng/learn-and-apply-rabbitmq
