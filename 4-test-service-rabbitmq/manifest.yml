@@ -1,0 +1,23 @@
+applications:
+  - name: test-service-using-rabbitmq
+    disk_quota: 1G
+    instances: 1
+    memory: 1G
+    path: target/4-test-service-rabbitmq-0.0.1-SNAPSHOT.jar
+    timeout: 120
+    routes:
+      - route: test-service-using-rabbitmq.cfapps.io
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
+    stack: cflinuxfs3
+    env:
+##    To enable cloud profile on PCF while deploying app, use below property
+#      SPRING_PROFILES_ACTIVE: cloud
+##    OR
+##    This property enables JavaBuildPack(JBP) Configuration using Spring Auto Reconfiguration
+      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: true}'
+
+##    This property enables you to use Java11 jre for your app
+#      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    service:
+      - rabbitmq-service
